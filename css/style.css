@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+body {
+  width: 1000px;
+  height: 650px;
+  display: flex;
+}
+
+header {
+  width: 200px;
+  background-color: rgb(252, 206, 190);
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.mainmenu {
+  height: 550px;
+}
+
+.mainmenu>ul>li {
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mainmenu li:hover {
+  background-color: bisque;
+}
+
+.slide {
+  width: 800px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents {
+  width: 800px;
+  height: 200px;
+  display: flex;
+}
+
+.contents>div {
+  width: 20%;
+  height: 90%;
+  margin: 10px;
+}
+
+.contents>div:nth-of-type(3) {
+  width: 60%;
+  height: 200px;
+}
+
+.contents>.banner,.direct {
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents>.banner>a {
+  background-color: rgb(184, 231, 250);
+  padding: 10px 30px;
+}
+
+.contents>.direct>a {
+  background-color: rgb(184, 231, 250);
+  padding: 10px 15px;
+}
+
+.contents>.notice>a {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 2px 10px;
+  background-color: antiquewhite;
+  margin: 2px;
+}
+
+.contents>.notice>ul {
+  border: 2px solid #000;
+  padding: 10px 20px;
+  margin: 2px;
+}
+
+.contents>.notice>ul :nth-child(even) {
+  background-color: antiquewhite;
+}
+
+.contents>.notice>ul>li:hover {
+  background-color: rgba(222, 184, 135, 0.555);
+}
+
+.contents>.notice>ul>li {
+  padding: 5px;
+}
+
+.contents>.notice span {
+  float: right;
+}
+
+footer {
+  width: 800px;
+  height: 100px;
+  background-color: rgb(249, 220, 183);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright {
+  width: 50%;  
+  text-align: center;
+}
+
+.site {
+  width: 20%;
+}

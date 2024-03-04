@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;  /* 링크 밑줄 x */
+}
+
+/* 텍스트 속성을 통일시키기 위한 CSS */
+.m_text {
+  /* 중간크기 text 속성 */
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.s_text {
+  /* 작은크기 text 속성 */
+  font-size: 13px;
+}
+
+
+body {
+  background-color: #fafafa;
+}
+
+article {
+  width: 600px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  padding: 10px 20px;
+}
+
+header>.profileimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* margin: 0px 10px 0px 0px; */
+  margin-right: 10px;
+}
+
+/* 이미지 크기 맞추기 */
+.img_section>img {
+  width: 100%;
+  padding: 1px;
+}
+
+.icon {
+  padding-left: 10px;
+  position: relative;
+
+}
+
+.icon img {
+  width: 30px;
+}
+
+.icon :nth-child(4) /* :last-child랑 똑같음*/ {
+  position: absolute; /*나만 옮길거임*/
+  right: 10px; /*오른쪽에서부터 10px 떨어진 지점으로*/
+}
+
+.likes,.contents,.time {
+  padding: 5px 0px 0px 15px;
+}

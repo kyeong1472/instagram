@@ -26,7 +26,7 @@ article {
   width: 600px;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
-  margin: 0px auto;
+  margin: 10px auto;
   background-color: #fff;
 }
 
@@ -66,4 +66,37 @@ header>.profileimg {
 
 .likes,.contents,.time {
   padding: 5px 0px 0px 15px;
+}
+
+/*time과 comment 사이에 줄을 긋고 싶다
+time 바닥 테두리 or comment 천장 테두리 줘야함*/
+
+.comment {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment>input {
+  border: none;
+  padding: 5px;
+  outline: none;
+  width: 90%;
+}
+
+.comment>p {
+  color: blue;
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius: 10px;
+  opacity: 0.6; /*투명도만 설정하는 속성 1이 100%*/
+}
+
+.comment>p:hover {
+  background-color: rgb(202, 202, 202);
+  color: #333333;
+  opacity: 1;
 }
